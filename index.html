@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohit Kumar | Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#eef5ff;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+    position:relative;
+}
+
+header img{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+nav{
+    background:#111;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00d4ff;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 0;
+}
+
+section{
+    background:white;
+    padding:30px;
+    margin-bottom:25px;
+    border-radius:12px;
+    box-shadow:0 5px 12px rgba(0,0,0,.1);
+}
+
+h2{
+    color:#2a5298;
+    margin-bottom:20px;
+    text-align:center;
+    font-size:28px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#2a5298;
+    color:white;
+    padding:10px 18px;
+    border-radius:30px;
+}
+
+.hobby-list,
+.interest-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.card{
+    background:#eef4ff;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:#2a5298;
+    color:white;
+}
+
+/* Contact Form */
+
+.contact form{
+    max-width:800px;
+    margin:auto;
+}
+
+.input-box{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+}
+
+.input-box input,
+textarea{
+    width:100%;
+    padding:15px;
+    font-size:16px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+textarea{
+    resize:none;
+}
+
+button{
+    background:#2a5298;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#16396d;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+@media(max-width:700px){
+
+header h1{
+    font-size:30px;
+}
+
+nav a{
+    display:block;
+    margin:10px;
+}
+
+.input-box{
+    flex-direction:column;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="https://cdn.hackclub.com/019f224c-d563-777e-ad27-8adf4eb26e92/IMG_E2603.JPG" alt="Profile Photo">
+
+<h1>Rohit Kumar</h1>
+
+<p>Student | Science Enthusiast | Future Professional</p>
+
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#hobbies">Hobbies</a>
+<a href="#interests">Interests</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<section id="about">
+<h2>About Me</h2>
+
+<p>
+Hello! My name is <b>Rohit Kumar</b>. I am a Class 9 student.
+I enjoy learning new technologies, designing websites, solving mathematics,
+and exploring new ideas. My goal is to build a successful career while
+continuously improving my knowledge and skills.
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Computer Basics</div>
+<div class="skill">MS Word</div>
+<div class="skill">PowerPoint</div>
+<div class="skill">Communication</div>
+<div class="skill">Problem Solving</div>
+</div>
+
+</section>
+
+<section id="hobbies">
+
+<h2>My Hobbies</h2>
+
+<div class="hobby-list">
+
+<div class="card">
+<h3>📚 Reading</h3>
+<p>Reading books and gaining new knowledge.</p>
+</div>
+
+<div class="card">
+<h3>💻 Coding</h3>
+<p>Creating websites and learning programming.</p>
+</div>
+
+<div class="card">
+<h3>📷 Photography</h3>
+<p>Capturing beautiful moments.</p>
+</div>
+
+<div class="card">
+<h3>🏸 Sports</h3>
+<p>Playing Kho-Kho and outdoor games.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="interests">
+
+<h2>My Interests</h2>
+
+<div class="interest-list">
+<div class="card">Artificial Intelligence</div>
+<div class="card">Web Development</div>
+<div class="card">Science & Technology</div>
+<div class="card">Photography & Video Editing</div>
+<div class="card">Government Jobs Preparation</div>
+<div class="card">Graphic Designing</div>
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact <span style="color:#2a5298;">Me!</span></h2>
+
+<form action="#">
+
+<div class="input-box">
+<input type="text" placeholder="Enter your name" required>
+<input type="email" placeholder="Enter your email" required>
+</div>
+
+<textarea rows="6" placeholder="Enter your message here..." required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<section id="education">
+
+<h2>Education</h2>
+
+<p><b>Current Class:</b> Class 9 (Science)</p>
+<p><b>Subjects:</b> Physics, Chemistry, Biology</p>
+<p><b>Future Goal:</b> Build a successful career and continue learning new technologies.</p>
+
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 Rohit Kumar | Personal Portfolio Website</p>
+</footer>
+
+</body>
+</html>
